@@ -5,16 +5,16 @@ public:
     void helper(int n,int k,string s,int start){
         if(n==s.length()){
             res.push_back(s);
-            //return;
+            return;
         }
-        else{
+   
         for(int i=0;i<vals.size();i++){
             if(s.back()!=vals[i])
             {s.push_back(vals[i]);
                 helper(n,k,s,i+1);
                 s.pop_back();}
         }
-        }
+        
         return ;
     }
     string getHappyString(int n, int k) {
