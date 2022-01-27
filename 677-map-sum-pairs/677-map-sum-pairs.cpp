@@ -23,6 +23,7 @@ public:
                 curr->children[c-'a']= new trie();
             curr=curr->children[c-'a'];
             (curr->score)+=d;
+            
         }
         
         
