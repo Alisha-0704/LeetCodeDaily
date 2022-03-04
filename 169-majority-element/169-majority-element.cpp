@@ -7,7 +7,6 @@ public:
             m[nums[i]]++;
             if(m[nums[i]]>=floor((n+1)/2))
                 return nums[i];
-            
         }
         return -1;
     }
