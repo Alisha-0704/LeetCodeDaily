@@ -26,7 +26,6 @@ public:
                 sum+=l2->val;
             }
             sum+=count;
-            //cout<<prev->val<<endl;
             if(l1){
                 l1->val=sum%10;
                 
