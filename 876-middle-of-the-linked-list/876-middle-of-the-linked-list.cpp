@@ -15,12 +15,12 @@ public:
             return nullptr;
         
         ListNode* prev=head;
-        ListNode* nex=head;
+        ListNode* next=head;
         
-        while(prev && nex->next){
+        while(prev && next->next){
             prev=prev->next;
-            nex=nex->next->next;
-            if(nex==NULL)
+            next=next->next->next;
+            if(next==NULL)
                 return prev;
         }
         return prev;
